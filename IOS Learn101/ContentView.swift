@@ -39,21 +39,26 @@ struct ContentView: View {
                         Image(systemName: option.imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 30)
+                            .frame(width: 20)
                         
                         Text(option.title)
                         
                         Spacer()
                     }
-                    .padding()
+                    .padding(8)
                 }
+                Spacer()
             }
         }
     }
     
     struct MainView: View {
         var body: some View{
-            Text("List2")
+            VStack{
+                Image("IMG_2085")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
         }
     }
     
